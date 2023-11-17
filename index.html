@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+
+</head>
+<body>
+    
+    <header >
+        <nav class="navbar navbar-expand-lg  navbar-light fixed-top " >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/Event-Planning-logo.png" alt="logo" style="width: 200px; height: 65px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item border-end border-2 text-danger px-2">
+                        <a class="nav-link active" href="#" style="color: rgb(171, 79, 202);" onMouseOver="this.style.color=' rgb(129, 72, 148)'" onMouseOut="this.style.color=' rgb(171, 79, 202)'"><span class="nav-link-content">H</span>ome</a>
+                    </li>
+                    <li class="nav-item border-end border-2 px-2">
+                        <a class="nav-link" href="#" style="color: rgb(171, 79, 202);" onMouseOver="this.style.color=' rgb(129, 72, 148)'" onMouseOut="this.style.color=' rgb(171, 79, 202)'"><span class="nav-link-content">R</span>eview</a>
+                    </li>
+                    <li class="nav-item border-end border-2 px-2">
+                          <a class="nav-link" href="#" style="color: rgb(171, 79, 202);" onMouseOver="this.style.color=' rgb(129, 72, 148)'" onMouseOut="this.style.color=' rgb(171, 79, 202)'"><span class="nav-link-content">A</span>bout</a>
+                        </li>
+                    <li class="nav-item border-end border-2 px-2 dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" style="color: rgb(171, 79, 202);" onMouseOver="this.style.color=' rgb(129, 72, 148)'" onMouseOut="this.style.color=' rgb(171, 79, 202)'"><span class="nav-link-content">S</span>ervices</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Birthday Parties</a></li>
+                          <li><a class="dropdown-item" href="#">Wedding Parties</a></li>
+                          <li><a class="dropdown-item" href="#">Baby Shower Parties</a></li>
+                          <li><a class="dropdown-item" href="#">Engagement Home Party </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2">
+                          <a class="nav-link" href="#" style="color: rgb(171, 79, 202);" onMouseOver="this.style.color=' rgb(129, 72, 148)'" onMouseOut="this.style.color='rgb(171, 79, 202)'"><span class="nav-link-content">C</span>ontact us</a>
+                    </li>
+  
+                </ul>
+                <form class="d-flex mt-2">
+                    <input class="form-control me-2 d-block" type="text" placeholder="ask or search">                                     
+
+                </form>
+                <form class="d-flex mt-2">
+                  <button class="btn nav-btn  me-2 " type="button" >Search</button>
+                  <button class="btn nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Ask</button>
+                </form>
+              </div>
+            </div>
+        </nav> 
+    </header>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Log in to <b>Anyvent</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="/action_page.php" class="needs-validation">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn sing-btn d-block">sign in</button>
+            </form>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer ">
+            <button type="button" class="btn signup-btn d-block " data-bs-dismiss="modal">Create New Account</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <!-- header ///////////////////////////////////////////////////////////////// -->
+
+    <section class=" sec1 fixed-top ">
+        <div class="col-2 col-md-1" >
+            <div class="d-flex flex-column ">
+                <div class="p-1 mb-2 socialmedia-icon " >
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>    
+                 </div>
+                 <div class="p-1 mb-2 socialmedia-icon" >
+                    <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                 </div>
+                 <div class="p-1 my-2  socialmedia-icon">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>     
+                 </div>
+                 <div class="p-1 my-2 socialmedia-icon">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>   
+                 </div>
+                 <div class="p-1 my-2 socialmedia-icon">
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>        
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec1 ////////////////////////////// -->
+    <section class="sec2 ">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                
+              <div class="carousel-item active">
+                <img src="images/74247c5149dcac3087f9744b9e7857e0.jpg" alt="wedding" class="d-block" style="width:100%; height: 100%;">
+                <div class="slide-overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Wedding parties</h3>
+                    <p>Discover your dream wedding with our comprehensive planning</p>
+                    <button class="btn carousel-caption-btn">special packages</button>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/image4-min-3.jpg" alt="Birthday" class="d-block" style="width:100%; height: 100%;">
+                <div class="slide-overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Birthday parties</h3>
+                    <p>Create unforgettable birthday celebrations!</p>
+                    <button class="btn carousel-caption-btn ">special packages</button>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/bachelorette.jpg" alt="bachelorette" class="d-block" style="width:100%; height: 100%;">
+                <div class="slide-overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Bachelorette parties</h3>
+                    <p>Unleash the ultimate bachelorette party extravaganza!</p>
+                    <button class="btn carousel-caption-btn">special packages</button>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/Baby-Shower.jpg" alt="Baby-Shower" class="d-block" style="width:100%; height: 100%;">
+                <div class="slide-overlay"></div>
+                <div class="carousel-caption ">
+                    <h3>Baby shower parties</h3>
+                    <p>Delight in the perfect baby shower with our seamless planning</p>
+                    <button class="btn carousel-caption-btn">special packages</button>
+                    
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+                    
+    </section>
+    <!-- sec2 /////////////////////////////////////////// -->
+    <section class="sec3 container-fluid">
+        <div class="row px-lg-5 ">
+            <div class="sec3-content col-7  py-5 " >
+                <h1>Welcome to <b>Anyvent</b> event planning</h1>
+                <p class="sec3-info mt-3 text-sm">At Anyvents, we are passionate about creating unforgettable experiencesfor our clients. With years of experience in the event planning industry.</p>
+                <button class="btn sec3-btn mt-md-5 ">Learn more</button>
+      
+            </div>
+            <div class="col-5  py-5">
+                <img src="images/Event-Planning-logo.png"  style="width: 100%; height: 300px;">
+            </div> 
+        </div>
+        
+  
+    </section> 
+    <!-- sec3 //////////////////////////////////////////// -->
+
+    <section class="sec4 container-fluid" >
+      <div class="sec-heading pt-5 text-center">
+        <h2>Target Areas In Egypt</h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+
+      <div id="accordion" class="my-5">
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn btn-accordion w-100  " data-bs-toggle="collapse" href="#collapseOne">
+              Cairo city 
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body w-100">
+              With its rich history and iconic landmarks, Cairo is a captivating destination for event planning.
+              <div class="container mt-4 px-sm-5">
+                <div class="d-flex flex-row flex-wrap justify-content-around">
+
+                  <div class="place-item col-3">
+                    <figure><img src="images/cairo-place1.jpg" class="rounded-circle place-item-img " alt="Marriᴏtt Hotel"></figure>
+                    <figcaption><p class="text-center">Marriᴏtt G. Doubleo Hotel</p></figcaption>
+                  </div>
+                  <div class="place-item place-item2 col-3">
+                    <figure><img src="images/cairo-place2.jpeg" class="rounded-circle place-item-img" alt="Marriᴏtt Hotel"></figure>
+                    <figcaption><p class="text-center">Marriott Mina House Hotel</p></figcaption>
+                  </div>
+                  <div class="place-item col-3">
+                    <figure><img src="images/cairo-place3.jpg" class="rounded-circle place-item-img" alt="Taracina Hotel"></figure>
+                    <figcaption><p class="text-center">Taracina Hotel</p></figcaption>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn btn-accordion w-100 " data-bs-toggle="collapse" href="#collapseTwo">
+              Alexandria city
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              The city's rich cultural heritage provides opportunities to incorporate traditional music, art, and cuisine into events
+              <div class="container mt-4 px-sm-5">
+                <div class="d-flex flex-row flex-wrap justify-content-around">
+
+                  <div class="place-item col-3">
+                    <figure><img src="images/alex-place1.jpg" class="rounded-circle place-item-img " alt="Hilton Kings Ranch"></figure>
+                    <figcaption><p class="text-center">Hilton Kings Ranch Hotel</p></figcaption>
+                  </div>
+                  <div class="place-item place-item2 col-3">
+                    <figure><img src="images/alex-place2.jpg" class="rounded-circle place-item-img" alt="Gardenia palace" ></figure>
+                    <figcaption><p class="text-center">Gardenia palace</p></figcaption>
+                  </div>
+                  <div class="place-item col-3">
+                    <figure><img src="images/alex-place3.jpeg" class="rounded-circle place-item-img" alt="Sheraton Al Montazah Hotel" ></figure>
+                    <figcaption><p class="text-center">Sheraton Al Montazah Hotel</p></figcaption>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn btn-accordion w-100 " data-bs-toggle="collapse" href="#collapseThree">
+              Hurghada City
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Escape to the vibrant shores of Hurghada, where our event planning company turns dreams into unforgettable experiences
+              <div class="container mt-4 px-sm-5">
+                <div class="d-flex flex-row flex-wrap justify-content-around">
+
+                  <div class="place-item col-3">
+                    <figure><img src="images/jouna-place1.jpeg" class="rounded-circle place-item-img " alt="La Maison Bleue El Gouna"></figure>
+                    <figcaption><p class="text-center">La Maison Bleue El Gouna</p></figcaption>
+                  </div>
+                  <div class="place-item place-item2 col-3">
+                    <figure><img src="images/jouna-place2.jpg" class="rounded-circle place-item-img" alt="The Chedi El Gouna" ></figure>
+                    <figcaption><p class="text-center">The Chedi El Gouna</p></figcaption>
+                  </div>
+                  <div class="place-item col-3">
+                    <figure><img src="images/jouna-place3.jpg" class="rounded-circle place-item-img" alt="Casa Cook El Gouna" ></figure>
+                    <figcaption><p class="text-center">Casa Cook El Gouna</p></figcaption>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+    <!-- sec4 /////////////////////////////////////////////////////////////////////////////-->
+
+    <section class="sec5 container-fluid pt-5 ">
+      <div class="sec-heading pt-3 ">
+        <h2 class="text-center">Select Target Location In Egypt</h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+      <div class="sec5-content container my-5">
+        <span><strong>Write</strong> or <strong>Select</strong> your desired location</span>
+        <a href="https://www.google.com/maps/dir/''/''/@26.69425,30.25435,6z/data=!3m1!4b1?entry=ttu" target="_blank"><i class="fas fa-map-marker-alt sec5-location-icon"></i></a>
+        <textarea class="d-block mt-3" cols="30" rows="10" placeholder="Enter your desired location for the event"></textarea>
+        <button class="btn mt-3 location-btn" data-bs-toggle="tooltip" title="places suggestions!">Suggest</button>
+      </div>
+    </section>
+    <!-- sec5 /////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="sec6 container-fluid">
+      <div class="sec6-overlay">
+        <div class="sec6-content text-center">
+          <i class="fas fa-birthday-cake"> <sup><span class="badge rounded-pill ">+600</span></sup></i>
+          <p>More than 6 hundreds Events were planned</p>
+          <button class="btn carousel-caption-btn ">Recent Packages</button>
+        </div>
+        
+      </div>
+      
+    </section>
+    <!-- sec6 //////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="sec7 container-fluid py-5">
+      <div class="sec-heading ">
+        <h2 class="text-center">Popular Places In Egypt </h2>
+        <div class="sec-line mx-auto"></div>
+
+      </div>
+      <div class="sec7-content container  mt-5 ">
+        <div class="sec7-items d-flex row justify-content-around">
+          <div class="col-lg-3 col-md-6 me-lg-3 mt-4 card" >
+            <img class="card-img-top" src="images/tracina.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Taracina</h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> taracina wedding on the nile, Giza, Egypt</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (+20 1113670807)</p>
+              <a href="https://www.facebook.com/taracinaweddings/about?locale=ar_AR" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 me-lg-3 mt-4 card" >
+            <img class="card-img-top" src="images/stagenile.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Stage ElNile</h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> El Nile Street, Ad Doqi A, Dokki, Giza, Egypt</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (+20 1016030207)</p>
+              <a href="https://www.facebook.com/Stage.ElNile/about" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 mt-4 card" >
+            <img class="card-img-top" src="images/cazino.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Na3na3</h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Lebanese restaurant by the sea, Casino Al Shatby, Alexandria</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (+20 1555519959)</p>
+              <a href="https://www.facebook.com/Na3Na3LebaneseRestaurant?locale=ar_AR" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 me-lg-5 mt-4 card" >
+            <img class="card-img-top" src="images/jouna-place2.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">The Chedi El Gouna </h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Hill Villas Rd, Hurghada, Red Sea</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (+20 1005519959)</p>
+              <a href="https://www.facebook.com/thechedielgouna/about?locale=ar_AR" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 me-lg-5 mt-4 card" >
+            <img class="card-img-top" src="images/riverspot.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">River spot </h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Corniche al Nile maadi, Cairo, Egypt</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (+20 1067005234)</p>
+              <a href="https://www.facebook.com/thechedielgouna/about?locale=ar_AR" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 mt-4 card" >
+            <img class="card-img-top" src="images/revolving.jpg" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Revolving Restaurant & Lounge </h4>
+              <p class="card-text"><i class="fas fa-map-marker-alt"></i> Grand Nile Tower Hotel, Cairo, Egypt</p>
+              <p class="telephon"><i class="fas fa-phone-alt"></i> (02 23651234)</p>
+              <a href="https://www.facebook.com/thechedielgouna/about?locale=ar_AR" target="_blank" class="btn ">See Profile</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- sec7 ////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="sec8 container-fluid pt-5">
+      <div class="sec-heading ">
+        <h2 class="text-center">Events Gallery </h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+
+      <div class="sec8-content container mt-5">
+
+        <div class="d-flex flex-row sec8-item ">
+
+          <div class="sec8-item-info p-4 ">
+            <h3>Wedding Party</h3>
+            <i class="fas fa-calendar-alt"> Mon, October 23rd 2023</i>
+            <div class="sec-line"></div>
+            <p class="text-break my-4">On Monday, we prepared the traying hall for an engagement party, and we had made many work from 9 am until 3 pm, and it was 3 hours before the party. We have prepared more than 100 engagement parties by contracting with several places inside and outside Cairo</p>
+            <button class="btn clock-btn" disabled><i class="fas fa-clock"></i> 1:51 minutes</button>
+            <button class="btn"><a href="https://www.facebook.com/taracinaweddings/videos/614512617074965" target="_blank"><i class="fas fa-play"></i> play vlog</a></button>
+          </div>
+          <div class="sec8-item-img" ></div>
+
+        </div>
+
+        <div class="d-flex flex-row sec8-item sec8-item-second my-5">
+
+          <div class="sec8-item-info p-4 ">
+            <h3>Birthday Party</h3>
+            <i class="fas fa-calendar-alt"> Fri, August 8th 2021</i>
+            <div class="sec-line"></div>
+            <p class="text-break my-4">On Friday, we prepared Home for a Birthday party, and we had made many work from 3 pm until 5 pm, and it was 1 hours before the party. We have prepared more than 200 birthday parties by contracting with several places inside and outside Cairo. we contract with more than 5 dessert shops in Egypt</p>
+            <button class="btn clock-btn" disabled><i class="fas fa-clock"></i> 13:24 minutes</button>
+            <button class="btn"><a href="https://www.youtube.com/watch?v=84FXvtixZeY" target="_blank"><i class="fas fa-play"></i> play vlog</a></button>
+          </div>
+          <div class="sec8-item-img" ></div>
+
+        </div>
+
+        <div class="d-flex flex-row sec8-item sec8-item-third  ">
+
+          <div class="sec8-item-info p-4 ">
+            <h3>Engagement Party</h3>
+            <i class="fas fa-calendar-alt"> Fri, October 12nd 2022</i>
+            <div class="sec-line"></div>
+            <p class="text-break my-4">On Friday, we prepared Home for an engagement party, and we had made many work from 9 am until 3 pm, and it was 3 hours before the party. We have prepared more than 500 engagement parties by contracting with several places inside and outside Cairo</p>
+            <button class="btn clock-btn" disabled><i class="fas fa-clock"></i> 00:30 minutes</button>
+            <button class="btn"><a href="https://www.youtube.com/shorts/UX6nJKcZUSQ" target="_blank"><i class="fas fa-play"></i> play vlog</a></button>
+          </div>
+          <div class="sec8-item-img" ></div>
+
+        </div>
+
+      
+
+      </div>
+    </section>
+    <!-- sec8 //////////////////////////////////////////////////// -->
+
+    <section class="sec9 container-fluid mt-5">
+      <img src="images/break.jpg" alt="Event-Planning" style="width: 100%; height: 100%;">
+      <div class="sec9-overlay">
+        <div class="container sec9-content p-5">
+          <h2 class="text-center text-white"><Strong>Join</Strong> Us</h2>
+          <p class="text-white">follow our accounts on:</p>
+          <div class="sec9-info d-flex flex-row flex-wrap justify-content-around text-center mt-5 py-3">
+            <div class="sec9-item col-2">
+              <a href="#"><i class="fab fa-twitter-square "></i></a>
+              <h5>Twitter</h5>
+            </div>
+
+            <div class="sec9-item col-2 ">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <h5>LinkedIn</h5>
+            </div>
+
+            <div class="sec9-item col-2">
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <h5>Instagram</h5>
+            </div>
+
+            <div class="sec9-item col-2">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <h5>Facebook</h5>
+            </div>
+
+          </div>
+        </div>
+       </div>
+    </section>
+    <!-- sec9 ///////////////////////////////////////////////////////////////// -->
+
+    <section class="sec10 container-fluid py-5 ">
+      <div class="sec-heading ">
+        <h2 class="text-center">Our Team </h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+
+      <div class="sec10-content container d-flex flex-row flex-wrap justify-content-around mx-auto mt-5">
+
+        <div class="sec10-item col-lg-3 p-3 mt-3" style="width:300px">
+          <div class="sec10-item-heading ">
+            <img src="images/event-planner.jpg" class="rounded-circle" alt="event-planner">
+            <div class="sec10-item-name ">
+              <p><i class="fas fa-user"></i> Sara Mohsen </p>
+              <p class="employee-info"><b>Anyvent</b> Event Planner</p>
+            </div>
+          </div>
+          <div class="sec10-item-info mt-5">
+            <p>Sarah is a highly experienced event planner with over 10 years of industry expertise. Known for her meticulous attention to detail and creative approach.</p>
+          </div>
+        </div>
+
+        <div class="sec10-item col-lg-3 p-3 mt-3" style="width:300px">
+          <div class="sec10-item-heading ">
+            <img src="images/creative.jpg" class="rounded-circle" alt="event-planner">
+            <div class="sec10-item-name ">
+              <p><i class="fas fa-user"></i> Osama Mohammed </p>
+              <p class="employee-info"><b>Anyvent</b> creative-team manager</p>
+            </div>
+          </div>
+          <div class="sec10-item-info mt-5">
+            <p>He is a seasoned creative professional with a passion for event design and branding. With over 8 years of experience in the industry.</p>
+          </div>
+        </div>
+
+        <div class="sec10-item col-lg-3 p-3 mt-3" style="width:300px">
+          <div class="sec10-item-heading ">
+            <img src="images/customer-service.jpg" class="rounded-circle" alt="event-planner">
+            <div class="sec10-item-name ">
+              <p><i class="fas fa-user"></i> Mustafa Ezz </p>
+              <p class="employee-info"><b>Anyvent</b> customer service</p>
+            </div>
+          </div>
+          <div class="sec10-item-info mt-5">
+            <p>He is an accomplished customer service professional with a strong track record of delivering exceptional client experiences. With over 10 years of experience in the event planning industry.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- sec10 /////////////////////////////////////////////////////////////////////////////////// -->
+
+    <footer class="sec11 container-fluid  pt-3">
+      <div class="sec11-content d-flex flex-row flex-wrap jstify-content-around text-center ">
+        <div class="sec11-item  col-lg-4 col-12 px-2 ">
+          <div class="sec11-heading py-3">
+            <img src="images/Event-Planning-logo.png" style="width: 100px;height: 50px;" alt="">
+            <h5 class="d-inline">Our Contacts</h5>
+          </div>
+
+          <div class="sec11-info mt-4">
+            <p>Tel: 000-000-000</p>
+            <p>Address: Egypt</p>
+            <p>Fax: 000-000-000</p>
+          </div>
+        </div>
+
+        <div class="sec11-item col-lg-4 col-12 px-2 ">
+          <div class="sec11-heading py-3">
+            <img src="images/Event-Planning-logo.png" style="width: 100px;height: 50px;" alt="">
+            <h5 class="d-inline">Our Links</h5>
+          </div>
+
+          <div class="sec11-info mt-4">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Our packages</a></p>
+            <p><a href="#">Our Gallary</a></p>
+          </div>
+        </div>
+
+        <div class="sec11-item col-lg-4 col-12 px-2 ">
+          <div class="sec11-heading py-3">
+            <img src="images/Event-Planning-logo.png" style="width: 100px;height: 50px;" alt="">
+            <h5 class="d-inline">Our Vision</h5>
+          </div>
+
+          <div class="sec11-info mt-4">
+            <p>service for all</p>
+            <p>Provide best service</p>
+            <p>fast preparation</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="copywrite container text-center p-4 mt-3">
+        <p><b>Copywrite</b>&copy; 2020, Anyvent Event planning company. All rights</p>
+
+      </div>
+
+
+    </footer>
+
+    
+<script src="js/script.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

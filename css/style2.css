@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 3000px;
+    background-color: rgb(232, 228, 222);
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.nav-link {
+    border-radius: 25px;
+}
+.nav-link:focus {
+    background-color: rgb(232, 228, 222) ;
+}
+.nav-link:hover .nav-link-content{
+    font-size: 18px;
+    font-weight: 600;
+}
+.dropdown-menu {
+    background-color: rgb(232, 228, 222) ;
+}
+.btn{
+    background-color: rgb(184, 110, 209) ;
+    color: azure;
+}
+.nav-btn {
+    width: 100px;
+}
+.btn:hover {
+    background-color:  rgb(129, 72, 148);
+    transform: scale(1.1,1.1);
+    color: azure;
+
+
+}
+
+.sing-btn {
+    margin: auto;
+    width: 90%;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgb(89, 158, 213) 
+}
+.sing-btn:hover {
+    transform: scale(1,1);
+    background-color: rgb(45, 77, 102) 
+
+}
+.signup-btn {
+    margin: auto;
+    width: 60%;
+}
+
+
+/* header-end //////////////////////////////////////// */
+.sec1 {
+    margin-top: 180px;
+    width: 80px;
+    margin-left: auto;
+}
+.socialmedia-icon a i {
+    font-size: 60px;
+    line-height: 50px;
+    color:rgb(184, 110, 209);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+
+}
+.socialmedia-icon a:hover i {
+    color:rgb(129, 72, 148);
+    transform: scale(.9,.9);
+    
+}
+/* sec1-end //////////////////////////////////////// */
+.sec2 {
+    margin-top: 90px;
+}
+.carousel-item {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+.slide-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+    position: absolute;
+    top:0;
+    /* z-index: 2; */
+}
+.carousel-caption h3{
+    text-shadow: 1px 1px 15px rgb(14, 12, 12);
+    font-size: 30px;
+}
+.carousel-caption-btn {
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    background-color: rgba(0, 0, 0,0.4);
+    box-shadow: 1px 1px 9px 1px rgb(247, 245, 245)  ;
+    text-transform: capitalize;
+    width: 180px;
+    font-size: 18px;
+}
+.carousel-caption-btn:hover {
+    background-color: rgb(184, 110, 209);
+    border: 0;
+    transform: scale(1,1);
+    box-shadow: 1px 1px 10px 0.5px rgb(0, 0, 0) ;
+}
+/* sec2-end ////////////////////////////////////////////////////// */
+.sec3 {
+    margin-top: 50px;
+    background-color: rgb(207, 201, 193);
+    border: 2px solid rgb(255, 255, 255);
+
+
+}
+b{
+    text-shadow: 1px 1px 30px rgb(233, 228, 228);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    color:  rgb(181, 50, 146) ;
+}
+.sec3-info{
+    text-align: left;
+    width: 80%;
+    font-size: 17px;
+}
+
+.sec3-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+/* sec3-end /////////////////////////////////////////////////////////// */
+
+.sec-line{
+    width: 100px;
+    height: 2px;
+    background-color: rgb(204, 78, 170) ;
+
+}
+.sec4 .card-header {
+    background-color:  rgba(150, 97, 167, 0.7);
+}
+.btn-accordion {
+    background-color: rgba(224, 145, 203,0) ;
+    text-align: left;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px rgb(21, 19, 19);
+    
+
+}
+.btn-accordion:hover {
+    background-color: rgba(224, 145, 203,0) ;
+    transform: scale(1,1);
+
+}
+.card-body {
+    font-size: 18px;
+}
+.place-item {
+    font-size: 15px;
+}
+.place-item2 {
+    margin-right:5px ;
+    margin-left: 5px;
+}
+.place-item-img {
+    height: 150px;
+    width: 100%;
+}
+figcaption p {
+    font-size: 15px;
+}
+@media screen and (max-width: 780px) {
+    .place-item-img {
+        height: 100px;
+    }
+    figcaption p {
+        font-size: 13px;
+    }
+}
+
+
+/*sec4-end //////////////////////////////////////////////////////////////////  */
+
+.sec5 {
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.sec5-content  {
+    font-size: 20px;
+    color: black;
+
+}
+.sec5-content b {
+    color: rgb(0, 0, 0);
+
+}
+.sec5-location-icon {
+    font-size: 25px;
+    color: rgb(184, 110, 209);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.sec5-location-icon:hover {
+    animation-play-state: paused;
+    color: rgb(90, 50, 103);
+}
+
+@keyframes move {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-25%);}
+    100% {transform: translateY(0);}
+}
+strong {
+    color: rgb(204, 78, 170);
+}
+.sec5-content textarea {
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+}
+.location-btn {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+/* sec5-end /////////////////////////////////////////////////// */
+
+.sec6 {
+    height: 40vh;
+    background: url(../images/break2.jpg) no-repeat fixed center ;
+    background-size: cover;
+    position: relative;
+    
+}
+.sec6-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.6);
+}
+.sec6-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec6-content i {
+    padding-left: 50px;
+    font-size: 37px;
+    color: rgb(234, 96, 197);
+}
+.sec6-content i .badge {
+    font-size: 16px;
+    background-color:rgb(207, 201, 193);
+    color: black;
+}
+
+.sec6-content p {
+    margin-top: 15px;
+    color: aliceblue;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px black;
+}
+/* sec6-end //////////////////////////////////////////////////////////// */
+
+.sec7{
+    background-color: rgb(207, 201, 193);
+    border-top:1px solid white;
+    border-bottom:1px solid white ;
+
+}
+.sec7 .card {
+    position: relative;
+}
+
+.sec7 .card::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+    background-color: black;
+}
+.sec7 .card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.sec7 .card-text {
+    font-size: 17px;
+}
+.telephon {
+    margin-top: -10px;
+    font-size: 17px;
+}
+.sec7 i {
+    color: rgb(234, 96, 197);
+ 
+}
+/* sec7-end //////////////////////////////////////////////////////// */
+.sec8-item {
+    flex-wrap: wrap-reverse;
+    box-shadow: 1px 1px 20px 5px rgb(163, 158, 150);
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgb(232, 228, 222), rgb(156, 144, 126));
+
+}
+.sec8-item-info {
+    width: 50%;
+}
+.sec8-item-info a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.clock-btn {
+    background-color: rgb(232, 228, 222) ;
+    border: 1px solid rgb(156, 144, 126) ;
+    color: black;
+}
+.sec8-item .sec8-item-img {
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    padding: 1em 5em 1em 1em;
+    overflow: hidden;
+    color: #fff;  
+    width: 50%;  
+    border-radius: 15px;
+}
+.sec8-item-img::after {
+    content: '';
+    background: url(../images/event-gallary1.jpg) no-repeat fixed ;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    transform: skew(10deg);
+}
+.sec8-item-second .sec8-item-img::after {
+    background: url(../images/event-gallary2.jpg) no-repeat fixed ;
+    background-size: cover;
+
+}   
+.sec8-item-third .sec8-item-img::after {
+    background: url(../images/event-gallery3.jpeg) no-repeat fixed ;
+    background-size: cover;
+
+}    
+.sec8-item:hover .sec8-item-img::after  {
+    transform: skew(0deg);
+    transition: 0.5s;
+
+}
+.sec8 .sec-line {
+    margin-top: 3px;
+}
+.sec8-item:hover .sec-line {
+    width: 150px;
+    transition: 0.5s;
+
+} 
+.sec8-item:hover {
+    box-shadow: 1px 1px 1px 5px rgb(232, 228, 222);
+    border: 1px solid rgb(156, 144, 126);
+    transition: 0.5s;
+}
+@media screen and (max-width: 780px) {
+    .sec8-item-info {
+        width: 100%;
+    }
+    .sec8-item .sec8-item-img {
+        width: 100%;  
+        height: 300px;
+    }
+    
+    .sec8-item-img::after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+        transform-origin: 0 0;
+        transform: skew(0deg);
+    }
+    .sec8-item:hover .sec8-item-img::after  {
+        transform: skew(0deg);
+    
+    }
+}
+/* sec8-end //////////////////////////////////////// */
+.sec9 {
+    position: relative;
+    height: 45vh;
+}
+.sec9-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.sec9-content {
+    margin: auto;
+}
+.sec9-content strong {
+    text-shadow: 1px 1px 10px rgb(248, 245, 245);
+
+}
+.sec9-content p {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.sec9-item i {
+    line-height: 50px;
+    font-size: 70px;
+    color: rgb(204, 78, 170) ;
+    background-color:rgb(232, 228, 222) ;
+    box-shadow: 1px 1px 10px 3px black ;
+    transition: 0.5s;
+
+}
+.sec9-item h5 {
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(232, 228, 222);
+}
+
+.sec9-item i:hover {
+    line-height: 55px;
+    font-size: 75px;
+    color: rgb(117, 40, 96) ;
+
+}
+@media screen and (max-width: 780px) {
+    .sec9-item h5 {
+       display: none;
+    }
+}
+/* sec9-end ///////////////////////////////////////////////////// */
+
+.sec10-item-heading img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    
+}
+.sec10-item-name {
+    margin-top: 7px;
+    text-align: center;
+}
+.sec10-item-name i {
+    color: rgb(76, 70, 61);
+}
+.employee-info {
+    margin-top: -15px;
+    font-size: 14px;
+
+}
+.sec10-item-info {
+    text-align: justify;
+}
+.sec10-item {
+    background-image: linear-gradient(to top, rgb(232, 228, 222), rgb(156, 144, 126));
+    box-shadow: 7px 1px 10px 5px black;
+    transition: 0.5s;
+}
+.sec10-item:hover {
+    background-image: linear-gradient(to top, rgb(232, 228, 222), rgb(156, 144, 126));
+    box-shadow: 1px 1px 20px 5px rgb(144, 136, 124);
+    transform: scale(.95,.95);
+}
+/* sec10-end ////////////////////////////////////////////////////////////////// */
+
+.sec11 {
+    background-color: rgb(207, 201, 193);
+    border-top:1px solid white ;
+}
+.sec11-heading {
+    border-bottom: 1px solid white ;
+}
+
+
+.sec11-info a {
+    text-decoration: none;
+    color: rgb(151, 85, 173) ;
+}
+.sec11-info a:hover {
+    color: rgb(94, 57, 107) ;
+}
+.copywrite {
+    font-size: 18px;
+    border-top: 1px solid white;
+
+}
